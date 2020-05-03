@@ -1,0 +1,180 @@
+html 
+{
+        margin: 0px;
+        padding: 0px;
+}
+
+body 
+{ 
+	height: 89%;
+        font: 75% georgia, sans-serif;
+        line-height: 1.88889;
+        color: #555753; 
+        background: #D7D7D9;
+   	background-image: url("Images/circuitbackground.jpg");
+	margin: 0px; 
+        padding: 0px;
+}
+
+main,
+article 
+{
+	padding: 1px 10px 1px 10px;
+	border: 2px solid #7F0000;
+ 	background: #D7D7D9;
+        background: rgba(220, 220, 220, 0.9); 
+        margin: 1px 2px 16px 1px;
+}
+
+p 
+{ 
+
+        margin-top: 0px; 
+        text-align: justify;
+	color: #8F0000;
+}
+
+header 
+{
+	border: 3px solid #7F0000;
+	background: #D7D7D7;
+        background: rgba(220, 220, 220, 0.9); 
+        color: #DF0000;
+        margin: 1px auto 16px auto;
+	width: 474px;
+	padding: 10px;
+        text-align: center;
+}
+
+ul
+{
+        list-style-type: none;
+}
+
+ul li,
+{
+
+	padding-left: 0px;
+	margin-right: 0px;
+}
+
+header p 
+{
+	font-style: italic;
+	color: #2F2FDD;
+}
+
+.text-shadow
+{
+	text-shadow: 1px 1px black;
+}
+
+h3 
+{
+	text-align: center;
+	color:#CF0000;   
+}
+
+footer 
+{ 
+	margin-left: 0px;
+	width: auto;
+	padding: 3px;
+        background: #888888;
+        color: #666666;
+	text-align: center; 
+}
+
+.footer
+{
+	width: 100%;
+	height: 100%;
+}
+
+table
+{
+        text-align: center;
+        background: #34495E;
+        color: #7FAAAA;
+        border: 1px solid black;
+        overflow: hidden;
+}
+
+table th
+{
+        background: #8898A8;
+	color: #AA2222;
+	border: 1px solid black;
+}
+
+table td
+{
+	border: 1px solid black;
+}
+
+.fixedwidth
+{
+
+	font: 75% Andale Mono, monospace;
+	padding: 10px 8px 2px 8px;
+	width: 80%;
+	margin: 2px;
+        box-shadow:         1px 1px 3px 3px #555555;  
+
+}
+
+.content 
+{
+	width: 85%;
+	float: right;
+}
+
+.sidebar 
+{
+	border-right: 2px solid #00007F;
+	padding: 0px;
+	height: 100%;
+	width: 15%;
+	min-width: 150px;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	background-image: url("Images/bgcode.png");
+	background-color: #2C2C2C;
+	overflow-x: hidden;
+	padding-top: 10px;
+}
+
+.sidebar a 
+{
+	margin-left: -35px;
+ 	padding: 0px;
+	text-align: left;    
+	text-decoration: none;
+        font-size: 100%;
+	display: block;
+  	color: #818181;
+
+}
+
+.sidebar a:hover 
+{
+	color: #FF0000;
+  	animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon1 
+{
+  	from 
+	{
+	text-shadow: 0px 0px 10px #F00, 0px 0px 20px #F00, 0px 0px 30px #F00, 0px 0px 40px #FFF000, 0px 0px 70px #FF0000, 0px 0px 80px #FF0000, 0px 0px 100px #FF0000, 0px 0px 150px #FF0000;
+	}
+	to 
+	{
+    	text-shadow: 0px 0px 5px #F00, 0px 0px 10px #F00, 0px 0px 15px #F00, 0px 0px 20px #FFF000, 0px 0px 35px #FF0000, 0px 0px 40px #FF0000, 0px 0px 50px #FF0000, 0px 0px 75px #FF0000;
+  	}
+}
+
+

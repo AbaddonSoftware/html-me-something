@@ -2,6 +2,7 @@
 <html>
  <head>
  <title>The 6502 Extreme</title>
+ <link rel="stylesheet" media="screen" href="style.css">
  </head>
  <body>
   <div class = "content">
@@ -147,7 +148,7 @@ Now in low level terms like assembler these instructions work on individual bits
 <p> You might AND an 8 bit number by a number like 0x0F (0x denotes hexadecimal) The result of such an operation will return 1 where both the original number and the new new number contain 1s. 0x0F in 8 bits or one byte equals 00001111 so if you were to AND that with 0x2D (00101101) then only the last 4 bits would be preserved resulting in 0x0D (00001101). Effectively this allows you to mask the binary number against the other number. This is useful for a plethora of application and you might find some ways for it to make your overall code more effective as well.
 </p> 
 <p>
-OR is less used in everyday task other than for it's obvious comparative property though.
+OR is less used in everyday tasks other then for the obvious comparative property however.
 </p>
 <p>It's little brother XOR though is immensely important. It differs in that it is exclusive which means if you XOR 1 by another 1 you will return 0. Otherwise it works exactly like OR. It can be used for a simple somewhat insecure encryption called a XOR Cypher and for understanding how at the lowest level addition works within simple computers and logic gates.
 </p>
