@@ -12,12 +12,12 @@
       Welcome to The 6502 Extreme 
       </h1>
       <h2>
-      a new source for information for the budding coder. 
+      a new "old" source of information for the budding software engineer. 
       </h2>
     </div>
    <img src="Images/6502PopCulture.jpg" alt="Pop Culture 6502 References">
    <p>
-  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender from the tv show, Futurama, who is obviously powered by a 6502. The background is from the 1984 hit 'Terminator' starring Arnold Schwarzenegger. 
+  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender from the tv show, Futurama, who is obviously powered by a 6502. The background is from the 1984 hit, Terminator, starring Arnold Schwarzenegger. 
    </p>
    </header>
 
@@ -170,9 +170,9 @@ OR is less used in everyday tasks other then for the obvious comparative propert
 <p>NOT is somewhat more simple but just as useful to understand for the budding computer scientist. NOT simply returns the binary opposite of its input NOT 1 = 0, NOT 0 = 1. This is used though in a concept that you may be familiar with which is the signed number. A number with a positive and negative representation. Say you have the 8bit binary number 8. 00001000 in binary. Now if you wanted to know how to get to -8 as signed representation in 8 bit you'd NOT the number 11110111 (every bit flipped) and then add 1 (remember to carry) 11111000 which is 0xF8 (or 128 + 64 + 32 + 16 + 8 in Decimal but who has that kind of time?.). This is called a twos complement. Try to follow this but if you imagined that you added these numbers to themselves but restricted them to half full possible values as positive and half as negative (00 to 7F positive, -01 to -7F as negative) then this would actually wrap around to 0x78 which would leave 0x79, 0x7A,0x7B, 0x7C, 0x7D, 0x7E, and 0x7F before we got back to 0x00 (The wrap around point). As you can probably count now that would be 8 values below 0 or -8. Hopefully you found this enlightening.</p>
 </article>
 <article id = "Shifts">
-<h3>Multiplication, the old fashioned way with a twist</h3>
+<h3>Multiplication, the old fashioned way with a shift</h3>
 <p>
-Another interesting element of older processors like the 8 bit 6502 was that they were incapable of complex maths and their built in mathematical functions were essentially just addition and subtraction though faster multiplication was possible thanks to shifts and rotates. The fundamental idea for this is simple enough in that if you imagine a decimal number of 10 and then you were to shift it over one place to the left (and place a 0 in the extra place) you'd have 100 (effectively multiplying the original number by 10. The same process works when speaking of binary numbers except now when shifting instead of multiplying by 10 like we did above we multiply by 2 for each shift. This combined with some adding allowed such complex operations. You could also always just add all the numbers but this would be much slower and therefore shifting was essential. 
+Another interesting element of older processors, like the 8 bit 6502, was that they were incapable of complex maths and their built in mathematical functions were essentially just addition and subtraction though faster multiplication was possible thanks to shifts and rotates. The fundamental idea for this is simple enough in that if you imagine a decimal number of 10 and then you were to shift it over one place to the left (and place a 0 in the extra place) you'd have 100 (effectively multiplying the original number by 10. The same process works when speaking of binary numbers except now when shifting instead of multiplying by 10 like we did above we multiply by 2 for each shift. This combined with some adding allowed such complex operations. You could also always just add all the numbers but this would be much slower and therefore shifting was essential. 
 </p>
 </article>
 <div class = "footer">
