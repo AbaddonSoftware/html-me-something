@@ -21,14 +21,15 @@ article
 {
 	padding: 1px 10px 1px 10px;
 	border: 2px solid #7F0000;
+        width: 95%;
  	background: #D7D7D9;
         background: rgba(220, 220, 220, 0.9); 
-        margin: 1px 2px 16px 1px;
+       /* margin: 1px 2px 16px 1px; */
+        margin: 0 auto 16px auto;
 }
 
 p 
 { 
-
         margin-top: 0px; 
         text-align: justify;
 	color: #8F0000;
@@ -41,7 +42,7 @@ header
         background: rgba(220, 220, 220, 0.9); 
         color: #DF0000;
         margin: 1px auto 16px auto;
-	width: 474px;
+	width: 65%;
 	padding: 10px;
         text-align: center;
 }
@@ -119,7 +120,7 @@ table td
 	padding: 10px 8px 2px 8px;
 	width: 80%;
 	margin: 2px;
-        box-shadow:         1px 1px 3px 3px #555555;  
+        box-shadow: 1px 1px 3px 3px #555555;  
 
 }
 
@@ -135,7 +136,6 @@ table td
 	padding: 0px;
 	height: 100%;
 	width: 15%;
-	min-width: 150px;
 	position: fixed;
 	z-index: 1;
 	top: 0px;
