@@ -9,15 +9,15 @@
   <header>
     <div class="text-shadow">
       <h1>
-      Welcome to The 6502 Extreme 
+      Welcome to The 6502 Extreme
       </h1>
       <h2>
-      a new "old" source of information for the budding software engineer. 
+      a new "old" source of information for the budding software engineer.
       </h2>
     </div>
    <img src="Images/6502PopCulture.jpg" alt="Pop Culture 6502 References">
    <p>
-  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender from the tv show, Futurama, who is obviously powered by a 6502. The background is from the 1984 hit, Terminator, starring Arnold Schwarzenegger. 
+  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender from the tv show, Futurama, who is obviously powered by a 6502. The background is from the 1984 hit, Terminator, starring Arnold Schwarzenegger.
    </p>
    </header>
 
@@ -36,24 +36,24 @@ The 6502 is an intensely interesting processor, that while often modified, was t
 </p>
 <p>
 What could it do?
-The 6502 in most setups ran at speeds less than 2 mhz. Which means we won't be seeing DOOM on such a machine but many hackers/democoders have pushed these systems to amazing levels (Most of which can be seen in videos on youtube or through emulation). 
+The 6502 in most setups ran at speeds less than 2 mhz. Which means we won't be seeing DOOM on such a machine but many hackers/democoders have pushed these systems to amazing levels (Most of which can be seen in videos on youtube or through emulation).
 </p>
 <p>
-I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed so much more well designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page as it currently stands is not really particular to the 6502 but I figured I'd peak your interest in the topic by introducing you to these concepts in a similar way as I was introduced to them. 
+I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed so much more well designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page as it currently stands is not really particular to the 6502 but I figured I'd peak your interest in the topic by introducing you to these concepts in a similar way as I was introduced to them.
 </p>
 <p>
 The current iteration of this page is meant as a starting point and will, at this time, not be a full tutorial though such a tutorial may
-be coming in the future. Instead we will introduce you to some basic concepts inherent in 8 bit assembler but also useful to programmers as a 
-generality. Most of these concepts will apply to all programmers even those with no interest in programming the beast that is the 6502. 
+be coming in the future. Instead we will introduce you to some basic concepts inherent in 8 bit assembler but also useful to programmers as a
+generality. Most of these concepts will apply to all programmers even those with no interest in programming the beast that is the 6502.
 </p>
 </main>
 <article id = "Numbers">
 <h3> Number Systems </h3>
-<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits aka a nibble which is 1/2 a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places (decimal had places which you learned in your earlier years of ones, tens, hundreds, ...) are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to Hexadecimal you will probably only need to remember and therefore be able to add to the 8. See the table below for examples.</p> 
+<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits aka a nibble which is 1/2 a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places (decimal had places which you learned in your earlier years of ones, tens, hundreds, ...) are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to Hexadecimal you will probably only need to remember and therefore be able to add to the 8. See the table below for examples.</p>
 <table>
   <tr>
     <th>Decimal</th>
-    <th>Binary</th> 
+    <th>Binary</th>
     <th>Hexadecimal</th>
   </tr>
   <Tr>
@@ -146,7 +146,7 @@ You have probably thought of, and used, boolean operations like AND, OR, or NOT 
 Now in low level terms like assembler these instructions work on individual bits of 1s and 0s.
 </p>
 <p> You might AND an 8 bit number by a number like 0x0F (0x denotes hexadecimal) The result of such an operation will return 1 where both the original number and the new new number contain 1s. 0x0F in 8 bits or one byte equals 00001111 so if you were to AND that with 0x2D (00101101) then only the last 4 bits would be preserved resulting in 0x0D (00001101). Effectively this allows you to mask the binary number against the other number. This is useful for a plethora of application and you might find some ways for it to make your overall code more effective as well.
-</p> 
+</p>
 <p>
 OR is less used in everyday tasks other then for the obvious comparative property however.
 </p>
@@ -172,7 +172,7 @@ OR is less used in everyday tasks other then for the obvious comparative propert
 <article id = "Shifts">
 <h3>Multiplication, the old fashioned way with a shift</h3>
 <p>
-Another interesting element of older processors, like the 8 bit 6502, was that they were incapable of complex maths and their built in mathematical functions were essentially just addition and subtraction though faster multiplication was possible thanks to shifts and rotates. The fundamental idea for this is simple enough in that if you imagine a decimal number of 10 and then you were to shift it over one place to the left (and place a 0 in the extra place) you'd have 100 (effectively multiplying the original number by 10. The same process works when speaking of binary numbers except now when shifting instead of multiplying by 10 like we did above we multiply by 2 for each shift. This combined with some adding allowed such complex operations. You could also always just add all the numbers but this would be much slower and therefore shifting was essential. 
+Another interesting element of older processors, like the 8 bit 6502, was that they were incapable of complex maths and their built in mathematical functions were essentially just addition and subtraction though faster multiplication was possible thanks to shifts and rotates. The fundamental idea for this is simple enough in that if you imagine a decimal number of 10 and then you were to shift it over one place to the left (and place a 0 in the extra place) you'd have 100 (effectively multiplying the original number by 10. The same process works when speaking of binary numbers except now when shifting instead of multiplying by 10 like we did above we multiply by 2 for each shift. This combined with some adding allowed such complex operations. You could also always just add all the numbers but this would be much slower and therefore shifting was essential.
 </p>
 </article>
 <div class = "footer">
