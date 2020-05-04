@@ -24,8 +24,12 @@ article
         width: 95%;
  	background: #D7D7D9;
         background: rgba(220, 220, 220, 0.9); 
-       /* margin: 1px 2px 16px 1px; */
         margin: 0 auto 16px auto;
+}
+
+img
+{
+        margin: 5px;
 }
 
 p 
@@ -35,7 +39,7 @@ p
 	color: #8F0000;
 }
 
-header 
+#header 
 {
 	border: 3px solid #7F0000;
 	background: #D7D7D7;
@@ -119,7 +123,7 @@ table td
 	font: 75% Andale Mono, monospace;
 	padding: 10px 8px 2px 8px;
 	width: 80%;
-	margin: 2px;
+	margin: 5px;
         box-shadow: 1px 1px 3px 3px #555555;  
 
 }

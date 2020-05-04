@@ -6,7 +6,7 @@
  </head>
  <body>
   <div class = "content">
-  <header>
+  <header id = "header">
     <div class="text-shadow">
       <h1>
       Welcome to The 6502 Extreme
@@ -39,16 +39,15 @@ What could it do?
 The 6502 in most setups ran at speeds less than 2 mhz. Which means we won't be seeing DOOM on such a machine but many hackers/democoders have pushed these systems to amazing levels (Most of which can be seen in videos on youtube or through emulation).
 </p>
 <p>
-I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed so much more well designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page as it currently stands is not really particular to the 6502 but I figured I'd peak your interest in the topic by introducing you to these concepts in a similar way as I was introduced to them.
+I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed so much more well designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page, as it currently stands, is not really particular to the 6502 but I figured I'd pique your interest in the topic by introducing you to these concepts as I was introduced to them.
 </p>
 <p>
-The current iteration of this page is meant as a starting point and will, at this time, not be a full tutorial though such a tutorial may
-be coming in the future. Instead we will introduce you to some basic concepts inherent in 8 bit assembler but also useful to software engineers in general. Most of these concepts will apply to all programmers even those with no interest in programming the mythical beast that is the 6502.
+The current iteration of this page is meant as a starting point and will, at this time, not be a full tutorial though such a tutorial may be coming in the future. Instead we will introduce you to some basic concepts inherent in 8 bit assembler but also useful to software engineers in general. Most of these concepts will apply to all programmers even those with no interest in programming the mythical beast that is the 6502.
 </p>
 </main>
 <article id = "Numbers">
 <h3> Number Systems </h3>
-<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits aka a nibble which is 1/2 a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places (decimal had places which you learned in your earlier years of ones, tens, hundreds, ...) are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to Hexadecimal you will probably only need to remember and therefore be able to add to the 8. See the table below for examples.</p>
+<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits, also known as a nibble, which is half a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to hexadecimals ability to perfectly align to the nibble you will probably only need to remember and therefore be able to add to the 4th place (8+4+2+1). See the table below for examples.</p>
 <table>
   <tr>
     <th>Decimal</th>
@@ -140,7 +139,7 @@ be coming in the future. Instead we will introduce you to some basic concepts in
 <article id = "Booleans">
 <h3>Booleans Explained</h3>
 <p>
-You have probably thought of, and used, boolean operations like AND, OR, or NOT by now but you may not fully understand their usefulness and you may also be neglecting their little brother XOR (eXclusive OR). We will talk a bit about the originals first. If you already have a broad understanding of these concepts you may wish to skip this part. You are probably familiar with using a boolean statement in some type of check such as an if statement. You know that the result you are expecting is gained from the statement returning one of two binary choices (the values are not as well defined in high level languages but the final expectation of True or False is still a binary choice).</p>
+You have probably thought of, and used, boolean operations like AND, OR, or NOT by now but you may not fully understand their usefulness and you may also be neglecting their little brother XOR (eXclusive OR). We will talk a bit about the originals first. If you already have a broad understanding of these concepts you may wish to skip this part. You are probably familiar with using a boolean statement in some type of check such as an if statement. You know that the result you are expecting is gained from the statement returning one of two binary choices (the values are not as well defined in high level languages but the final expectation of True/Truthy or False/Falsy is still a binary choice).</p>
 <p>
 Now in low level terms like assembler these instructions work on individual bits of 1s and 0s.
 </p>
