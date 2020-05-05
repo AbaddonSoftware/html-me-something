@@ -17,7 +17,7 @@
     </div>
    <img src="Images/6502PopCulture.jpg" alt="Pop Culture 6502 References">
    <p>
-  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender from the tv show, Futurama, who is obviously powered by a 6502. The background is from the 1984 hit, Terminator, starring Arnold Schwarzenegger.
+  A picture showcasing some references to the 6502 in pop culture. Bottom left is from Kabuki Quantum Fighter for the NES. Top right is Bender, from the tv show 'Futurama', who is obviously powered by a 6502. The background is from the 1984 hit 'Terminator', starring Arnold Schwarzenegger.
    </p>
    </header>
 
@@ -32,14 +32,14 @@
 <main>
 <h3>Why The 6502?</h3>
 <p>
-The 6502 is an intensely interesting processor, that while often modified, was the backbone of many popular systems including the NES, the Atari 2600, Apple IIe, PC-Engine (aka TG16), and the Commodore 64. It's big brother the 65c816 was the processor used in the SNES. It featured only 3 user accessible registers of A, X, and Y with a somewhat unique capability of referencing the bottom 256 bytes from 0x0000 to 0x00FF as what was called a zero-page which could all be referenced with a single 8 bit byte and was therefore faster and treated by many programmers as an additional 256 custom registers.
+The 6502 is an intensely interesting processor, that while often modified, was the backbone of many popular systems including the NES, Atari 2600, Apple IIe, PC-Engine (aka TG16), and Commodore 64. It's big brother the 65c816 was the processor used in the SNES. It featured only 3 user accessible registers of A, X, and Y with a somewhat unique capability of referencing the bottom 256 bytes from 0x0000 to 0x00FF as what was called a zero-page which could all be referenced with a single 8 bit byte and was therefore faster and treated by many programmers as an additional 256 custom registers.
 </p>
 <p>
 What could it do?
 The 6502 in most setups ran at speeds less than 2 mhz. Which means we won't be seeing DOOM on such a machine but many hackers/democoders have pushed these systems to amazing levels (Most of which can be seen in videos on youtube or through emulation).
 </p>
 <p>
-I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed so much more well designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page, as it currently stands, is not really particular to the 6502 but I figured I'd pique your interest in the topic by introducing you to these concepts as I was introduced to them.
+I personally started learning 6502 assembler because of an intense interest in why the games of my youth always seemed more well-designed than the often prettier, more complex games of the modern age. I found that the limitations of game design seemed directly proportional to the ingenuity of these designs. This aspect fascinated me and perhaps it will fascinate you as well. This page, as it currently stands, is not really particular to the 6502 but I figured I'd pique your interest in the topic by introducing you to these concepts as I was introduced to them.
 </p>
 <p>
 The current iteration of this page is meant as a starting point and will, at this time, not be a full tutorial though such a tutorial may be coming in the future. Instead we will introduce you to some basic concepts inherent in 8 bit assembler but also useful to software engineers in general. Most of these concepts will apply to all programmers even those with no interest in programming the mythical beast that is the 6502.
@@ -47,12 +47,17 @@ The current iteration of this page is meant as a starting point and will, at thi
 </main>
 <article id = "Numbers">
 <h3> Number Systems </h3>
-<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits, also known as a nibble, which is half a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to hexadecimals ability to perfectly align to the nibble you will probably only need to remember and therefore be able to add to the 4th place (8+4+2+1). See the table below for examples.</p>
+<p>Let's start with an introduction to number systems such as binary and hexadecimal. Hexadecimal is used for binary conversion as it maps neatly to 4 bits, also known as a nibble, which is half a byte (8 bits). Here's a handy-dandy table for memorizing the conversions here. The binary places are multiplicants of 2 from base 1 so for 8 bits they'd be: 128/64/32/16/8/4/2/1 but thanks to hexadecimals ability to perfectly align to the nibble you will probably only need to remember and therefore be able to add to the 4th place (8/4/2/1). See the table below for examples.</p>
 <table>
   <tr>
     <th>Decimal</th>
     <th>Binary</th>
     <th>Hexadecimal</th>
+  </tr>
+    <tr>
+    <td>tens|ones</td>
+    <td>8421</td>
+    <td>16s|ones</td>
   </tr>
   <Tr>
     <td> 0</td>
